@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Rosary Of The Seven Sorrows</title>
+		<meta name="viewport" content="width = 1050, user-scalable = no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="../CSS/animate.css"></link>
+		<link rel="stylesheet" href="../CSS/design.css"></link>
+		<link rel="stylesheet" href="../CSS/basic.css"></link>
+		<link rel="stylesheet" href="../CSS/Book.css"></link>
+		<link rel="stylesheet" href="../CSS/jquery.mCustomScrollbar.css"></link>
+		<script type="text/javascript" src="../js/jquery.min.1.7.js"></script>
+		<script type="text/javascript" src="../js/modernizr.2.5.3.min.js"></script>
+		</head>
+		<body ccID="750">
+	<div ccID="759" id="cssmenu" class="animated fadeIn">
+	<ul ccID="804">
+		<li ccID="812"><a ccID="816" href="index.html">Home</a></li>
+		<li ccID="854">
+			<a ccID="863" href="#">The Seven Sorrows Rosary</a>
+			<ul ccID="908">
+				<li ccID="918"><a ccID="922" href="#">How To Pray It</a></li>
+
+				<li ccID="965">
+					<a ccID="976" href="#">History</a>
+				</li>
+				<li ccID="1016"><a ccID="1020" href="#">Promises and Merits</a></li>
+			</ul>
+		</li>
+		<li ccID="1083">
+		<a ccID="1091" href="/requests.ejs">Put In a Prayer Request</a>
+		</li>
+		<li ccID="1155"><a ccID="1159" href="#">Contact</a></li>
+		</div>
+
+		<div ccID="1203" class="flipbook-viewport"id="foo">
+	<div ccID="1245" class="container animated fadeIn">
+		<div ccID="1288" class="flipbook">
+		    <div ccID="1318" style="background-image:url(../pages/TitlePage.png)"></div>
+			<div ccID="1387" style="background-image:url(../pages/pageOne.png)"></div>
+			<div ccID="1454" style="background-image:url(../pages/pageTwo.png)"></div>
+			<div ccID="1521" style="background-image:url(../pages/pageThree.png)"></div>
+			<div ccID="1590" style="background-image:url(../pages/pageFour.png)"></div>
+			<div ccID="1658" style="background-image:url(../pages/pageFive.png)"></div>
+			<div ccID="1726" style="background-image:url(../pages/pageSix.png)"></div>
+			<div ccID="1793" style="background-image:url(../pages/pageSeven.png)"></div>
+			<div ccID="1862" style="background-image:url(../pages/pageEight.png)"></div>
+			<div ccID="1931" style="background-image:url(../pages/10.jpg)"></div>
+			<div ccID="1993" style="background-image:url(../pages/11.jpg)"></div>
+			<div ccID="2055" style="background-image:url(../pages/12.jpg)"></div>
+			<div ccID="2117" style="background-image:url(../pages/13.jpg)"></div>
+			<div ccID="2179" style="background-image:url(../pages/14.jpg)"></div>
+
+
+		</div>
+	</div>
+</div>
+<script ccID="2269" type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:922,
+
+			// Height
+
+			height:600,
+
+			// Elevation
+
+			elevation: 50,
+
+			// Enable gradients
+
+			gradients: true,
+
+			// Auto center this flipbook
+
+			autoCenter: true,
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../lib/turn.js'],
+	nope: ['../lib/turn.html4.min.js'],
+	both: ['../CSS/basic.css'],
+	complete: loadApp
+});
+
+</script>
+<script ccID="2840" src="../js/basic.js" type="text/javascript"></script>
+</body>
+</html>
