@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Rosary Of The Seven Sorrows</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="../CSS/animate.css"></link>
+		<link rel="stylesheet" href="../CSS/requests.css"></link>
+		<link rel="stylesheet" href="../CSS/jquery.mCustomScrollbar.css"></link>
+		</head>
+
+	<body>
+	<div id="cssmenu" class="animated fadeIn">
+	<ul>
+		<li><a href="../HTML/index.html">Home</a></li>
+		<li>
+			<a href="../HTML/about.html">The Seven Sorrows Rosary</a>
+			<ul>
+				<li><a href="../HTML/about.html#foo">How To Pray It</a></li>
+
+				<li>
+					<a href="../HTML/about.html">History</a>
+				</li>
+				<li><a href="../HTML/about.html">Promises and Merits</a></li>
+			</ul>
+		</li>
+		<li>
+		<a href="#">Put In a Prayer Request</a>
+		</li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
+<body>
+   <h2>Down Below, insert your name and your prayer intention, if you wish.<br> You
+   may put "Anonymous" in the name segment.</h2>
+   <span class="prettify">When you press submit, your name and prayer intention will be updated to the webpage,
+     where anyone can see it and pray for it.</span>
+
+<form action="/requests" method="POST" class="pleaseWork">
+    <input type="text" placeholder="name" name="name" class="name">
+    <input type="text" placeholder="request" name="request" class="request">
+    <button type="submit" class="submit">Submit</button>
+  </form>
+
+	 <ul class="pleaseWork">
+	 <% for(var i=0; i<requests.length; i++) {%>
+	 <li class="request">
+			<span class="prettify">Name:<%= requests[i].name %></span>
+		<span class="prettify">Please Pray For:<%= requests[i].request %></span>
+	</li>
+	<% } %>
+</ul>
+
+
+
+
+
+
+
+
+
+
+<script src="../static/js/main.js" type="text/javascript"></script>
+</body>
+</html>
