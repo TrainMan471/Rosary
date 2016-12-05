@@ -1,0 +1,26 @@
+{
+  "name": "sevensorrows",
+  "version": "1.0.0",
+  "description": "A website created to promote the Seven Sorrows Rosary",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DserverRun.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrainMan471/Rosary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrainMan471/Rosary/issues"
+  },
+  "homepage": "https://github.com/TrainMan471/Rosary#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.8"
+  }
+}
